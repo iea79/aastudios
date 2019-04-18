@@ -1,0 +1,18 @@
+.hw-popup#hw-popup_order
+	h4.hw-popup__title Заказать звонок
+	.hw-popup__content
+		form(action="./mailer.php" method="post").hw-popup__form.popup-form
+			input(type="hidden" name="form-type" value="1")
+			input(type="text" name="popup-name" placeholder="Как вас зовут?" required data-parsley-errors-messages-disabled)
+			input(type="text" name="popup-phone" placeholder="Ваш номер телефона" required data-parsley-errors-messages-disabled)
+			button(type="submit") Перезвоните мне
+	button.hw-popup__close
+
+
+.hw-popup#hw-popup_thanks
+	h4.hw-popup__title Заявка принята
+	.hw-popup__content
+		h3 Спасибо за заявку!
+		p Наш консультант свяжется с вами в ближайшее время, для уточнения интересующих вас вопросов
+	button.hw-popup__close
+

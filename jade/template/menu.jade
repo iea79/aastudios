@@ -1,0 +1,42 @@
+-var active = 'hw-menu__item_active';
+.hw-menu
+	ul.hw-menu__list
+		li.hw-menu__item(class=home)
+			a(href="/") Главная
+		li.hw-menu__item.hw-menu__item_has-submenu(class=service)
+			a(href="#") Услуги
+			div.hw-menu__submenu
+				.hw-menu__submenu-title 1. Косметология
+				.hw-menu__submenu-title 2. Консультации по видам пластической хирургии
+				ul
+					li
+						a(href="/plastika-ushey.html") Пластика ушей
+					li
+						a(href="/plastika-vek.html") Пластика век
+					li
+						a(href="/plastika-litsa.html") Пластика лица
+					li
+						a(href="/plastika-nosa.html") Пластика носа
+					li
+						a(href="/plastika-gub.html") Пластика губ
+				ul
+					li
+						a(href="/plastika-grudi.html") Пластика груди
+					li
+						a(href="/plastika-jivota.html") Пластика живота
+					li
+						a(href="/liposaktsia.html") Липосакция
+					li
+						a(href="/intimnaya-plastika.html") Интимная пластика
+				.hw-menu__submenu-title 3. Диагностика и амбулаторное лечение нарушений функций носового дыхания
+		//- <!-- <li class="hw-menu__item"><a href="/price.html">Цены</a></li> -->
+		li.hw-menu__item(class=blog)
+			a(href="/blog") Блог
+		li.hw-menu__item(class=about)
+			a(href="/about.html") О клинике
+
+	.hw-header__contacts_mobile
+		span.hw-header__phone +7 (383) 291 06 28
+		button(type="button").hw-header__order-button заказать звонок
+	button(type="button").hw-header__close-mobile-menu
+
